@@ -19,9 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/products', product);
 
-app.get('/',(req,res)=>{
-    res.send('Welcom da heroku')
-})
+
 
 const port=process.env.port || '5000'
 
